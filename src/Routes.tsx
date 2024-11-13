@@ -45,6 +45,12 @@ const components = {
   [Paths.clusterList]: asyncComponent(
     () => import('./Containers/ClusterLists/ClusterListsPage')
   ),
+  [Paths.createCluster]: asyncComponent(
+    () => import('./Containers/ClusterLists/CreateClustersPage')
+  ),
+  [Paths.createClusterTabs]: asyncComponent(
+    () => import('./Containers/ClusterLists/CreateClustersPage')
+  ),
 };
 
 export const AnalyticsRoutes: FunctionComponent<Record<string, never>> = () => {
